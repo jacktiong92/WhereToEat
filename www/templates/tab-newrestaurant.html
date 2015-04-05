@@ -1,0 +1,59 @@
+<ion-view view-title="Where To Eat" >
+	<ion-content class="padding">
+	<div class="list">
+		<a class="item item-thumbnail-left" href="#">
+			<img src="img/question_mark.jpg">
+			<h2>Change Image</h2>
+		</a>
+		<label class="item item-input item-stacked-label">
+			<span class="input-label">Title</span>
+			<input type="text" placeholder="Title">
+		</label>
+		<label class="item item-input item-stacked-label">
+			<span class="input-label">Description</span>
+			<input type="text" placeholder="Description">
+		</label>
+		<label class="item item-input item-stacked-label">
+			<span class="input-label">Promotion</span>
+			<input type="text" placeholder="Promotion (if any)">
+		</label>
+		<label class="item item-input item-stacked-label">
+			<span class="input-label">Contact Number</span>
+			<input type="text" placeholder="Contact Number" >
+		</label>
+		<label class="item item-input item-stacked-label">
+			<span class="input-label">Address</span>
+			<input type="text" placeholder="Address">
+		</label>
+	</div>
+		<button class="button button-full button-calm" ng-click="newRestaurant()">
+			Create Restaurant
+		</button>
+		<br/>
+	</ion-content>
+</ion-view>
+
+<script id="myrestaurant.html" type="text/ng-template">
+	<div class="modal">
+		<!-- Modal header bar -->
+		<ion-header-bar class="bar-secondary">
+			<h1 class="title">Where To Eat</h1>
+			<button class="button button-clear button-positive" ng-click="closeMyRestaurantModal()">Cancel</button>						
+		</ion-header-bar>
+			
+		<!-- Modal Content Area -->
+		<ion-content>
+			<div class="item item-text-wrap" padding="true">
+				<h3>Would you like this restaurant to re-appear on the top of our news feed stack?</h3>
+				<h3>Just buy us a coffee :)</h3>
+			</div>
+			
+			<div class="padding">
+				<div class="button-bar">
+					<button class="button button-block button-positive" ng-click="updateRestaurant()">$0.99 only</button>
+					<button class="button button-block button-positive" ng-click="updateRestaurant()">Cancel and Proceed</button>
+				</div>
+			</div>	
+		</ion-content>
+	</div>
+</script>

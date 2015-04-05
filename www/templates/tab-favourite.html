@@ -1,0 +1,73 @@
+<ion-view view-title="Favourite" >
+	 <ion-nav-buttons side="right">
+		<button class="button button-icon icon ion-android-restaurant" ng-click="randRestaurant()">
+		</button>
+	</ion-nav-buttons> 
+		
+	<ion-content class="padding">
+		<div class="card-wrap">
+			<div class="card full-card">
+				<img src="img/download.jpg" alt="" />
+			</div>
+			<p>
+				This is a short description to describe your restaurant
+			</p>
+			<p>
+				<a href="#" class="subdued">300 Like(s)</a>
+				<a href="#" class="subdued">100 Comments</a>
+			</p>
+		</div>
+		
+		<hr>
+
+		<div class="card-wrap">
+			<div class="card full-card">
+				<img src="img/download.jpg" alt="" />
+			</div>
+			<p>
+				This is a short description to describe your restaurant
+			</p>
+			<p>
+				<a href="#" class="subdued">300 Like(s)</a>
+				<a href="#" class="subdued">100 Comments</a>
+			</p>
+		</div>
+		
+		<hr>
+		
+		<div class="card-wrap">
+			<div class="card full-card">
+				<img src="img/download.jpg" alt="" />
+			</div>
+			<p>
+				This is a short description to describe your restaurant
+			</p>
+			<p>
+				<a href="#" class="subdued">300 Like(s)</a>
+				<a href="#" class="subdued">100 Comments</a>
+			</p>
+		</div>
+	</ion-content>
+</ion-view>
+
+<script id="rand-restaurant.html" type="text/ng-template">
+	<div class="modal">
+		<!-- Modal header bar -->
+		<ion-header-bar class="bar-secondary">
+			<h1 class="title">Where To Eat</h1>
+			<button class="button button-clear button-positive" ng-click="closeRandRestaurant()">Cancel</button>						
+		</ion-header-bar>
+			
+		<!-- Modal Content Area -->
+		<ion-content>
+			<div class="item item-text-wrap" padding="true">
+				<h3>Still don't know which restaurant is a choice of yours?</h3>
+				<h3>Let us do our job by clicking the button below </h3>
+			</div>
+			
+			<div class="padding">
+				<button class="button button-block button-positive" ng-click="selRandRestaurant()">BINGO</button>
+			</div>
+		</ion-content>
+	</div>
+</script>

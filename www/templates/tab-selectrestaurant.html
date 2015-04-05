@@ -1,0 +1,64 @@
+<ion-view view-title="" >
+	<ion-content class="padding">
+		<div class="list">
+			<a class="item item-thumbnail-left" href="#">
+				<img src="img/restaurant-1.jpg">
+				<h2>KOK MIN Cafe</h2>
+				<p>Last Updated: </p>
+				<p>4/4/2015 9:00am</p>
+			</a>
+			<label class="item item-input item-stacked-label">
+				<span class="input-label">Title</span>
+				<input type="text" placeholder="Title" ng-readonly="true" value="KOK MIN Cafe">
+			</label>
+			<label class="item item-input item-stacked-label">
+				<span class="input-label">Description</span>
+				<textarea placeholder="Description" ng-readonly="true">This is a short descriptioin to describe your restaurant</textarea>
+			</label>
+			<label class="item item-input item-stacked-label">
+				<span class="input-label">Promotion</span>
+				<textarea placeholder="Promotion (if any)" ng-readonly="true">Place your promotion here</textarea>
+			</label>
+			<label class="item item-input item-stacked-label">
+				<span class="input-label">Contact Number</span>
+				<input type="text" placeholder="Contact Number" ng-readonly="true" value="016-xxxxxxx">
+			</label>
+			<label class="item item-input item-stacked-label">
+				<span class="input-label">Address</span>
+				<textarea placeholder="Address" ng-readonly="true">Street 123</textarea>
+			</label>
+		</div>
+		
+		<div class="button-bar">
+			<button class="button icon-left ion-ios-telephone button-calm" ng-click="">Call Us</button>
+			<button class="button icon-left ion-ios-location button-calm" ng-click="">Get me there</button>
+		</div>
+	
+		<br/>
+	</ion-content>
+</ion-view>
+
+<script id="myrestaurant.html" type="text/ng-template">
+	<div class="modal">
+		<!-- Modal header bar -->
+		<ion-header-bar class="bar-secondary">
+			<h1 class="title">Where To Eat</h1>
+			<button class="button button-clear button-positive" ng-click="closeMyRestaurantModal()">Cancel</button>						
+		</ion-header-bar>
+			
+		<!-- Modal Content Area -->
+		<ion-content>
+			<div class="item item-text-wrap" padding="true">
+				<h3>Would you like this restaurant to re-appear on the top of our news feed stack?</h3>
+				<h3>Just buy us a coffee :)</h3>
+			</div>
+			
+			<div class="padding">
+				<div class="button-bar">
+					<button class="button button-block button-positive" ng-click="updateRestaurant()">$0.99 only</button>
+					<button class="button button-block button-positive" ng-click="updateRestaurant()">Cancel and Proceed</button>
+				</div>
+			</div>
+		</ion-content>
+	</div>
+</script>

@@ -1,0 +1,40 @@
+<ion-view view-title="Settings">
+  <ion-content>
+	<a class="item item-avatar" href="#">
+      <img src="img/dennis_ritchie.jpg">
+      <h2>Dennis Ritchie</h2>
+		<p>September 09, 1941</p>
+    </a>
+		
+   <ion-list>
+		<ion-toggle  ng-model="settings.enableFriends">
+		   Non - Halal
+		</ion-toggle>
+		<div class="list">
+			<label class="item item-input item-select">
+				<div class="input-label">
+					Country
+				</div>
+				<select>
+					<option>All</option>
+					<option>Australia</option>
+					<option selected>Malaysia</option>
+					<option>China</option>
+				</select>
+			</label>
+			<label class="item item-input item-select">
+				<div class="input-label">
+					City
+				</div>
+				<select>
+					<option>All</option>
+					<option>Bintulu</option>
+					<option>Sibu</option>
+					<option selected>Kuching</option>
+					<option>Miri</option>
+				</select>
+			</label>
+		</div>
+    </ion-list>
+  </ion-content>
+</ion-view>
