@@ -7,26 +7,26 @@
 		</a>
 		<label class="item item-input item-stacked-label">
 			<span class="input-label">Title</span>
-			<input type="text" placeholder="Title">
+			<input type="text" placeholder="Title" ng-model="restaurant.title">
 		</label>
 		<label class="item item-input item-stacked-label">
 			<span class="input-label">Description</span>
-			<input type="text" placeholder="Description">
+			<input type="text" placeholder="Description" ng-model="restaurant.desc">
 		</label>
 		<label class="item item-input item-stacked-label">
 			<span class="input-label">Promotion</span>
-			<input type="text" placeholder="Promotion (if any)">
+			<input type="text" placeholder="Promotion (if any)" ng-model="restaurant.promo">
 		</label>
 		<label class="item item-input item-stacked-label">
 			<span class="input-label">Contact Number</span>
-			<input type="text" placeholder="Contact Number" >
+			<input type="text" placeholder="Contact Number"  ng-model="restaurant.contact">
 		</label>
 		<label class="item item-input item-stacked-label">
 			<span class="input-label">Address</span>
-			<input type="text" placeholder="Address">
+			<input type="text" placeholder="Address" ng-model="restaurant.add">
 		</label>
 	</div>
-		<button class="button button-full button-calm" ng-click="newRestaurant()">
+		<button class="button button-full button-calm" ng-click="newRestaurant(restaurant)">
 			Create Restaurant
 		</button>
 		<br/>

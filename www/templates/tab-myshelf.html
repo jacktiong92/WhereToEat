@@ -1,6 +1,6 @@
 <ion-view view-title="MyShelf" >
 	<ion-content class="padding">
-		<div class="list">
+		<!--<div class="list">
 			<a class="item item-thumbnail-left" href="#/tab/myrestaurant">
 				<img src="img/restaurant-1.jpg">
 				<h2>KOK MIN Cafe</h2>
@@ -12,8 +12,13 @@
 				<h2>Subway</h2>
 				<p>Last Updated: </p>
 				<p>1/4/2015 9:00am</p>
+				<p>{{$scope.myListOfRestaurants[0].contact}}</p>
 			</a>
+		</div>-->
+		<div ng-repeat="myRestaurant in myListOfRestaurants">
+			  {{myRestaurant.contact}}
 		</div>
+		
 		<button class="button button-full button-calm" ng-click="showNewShelfModal()">
 			Add New Shelf
 		</button>
@@ -36,7 +41,7 @@
 			</div>
 			
 			<div class="padding">
-				<button class="button button-block button-positive" ng-click="closeMyShelfModal()">$0.99 only</button>
+				<button class="button button-block button-positive" ng-click="newRestaurant()">$0.99 only</button>
 			</div>
 		</ion-content>
 	</div>
